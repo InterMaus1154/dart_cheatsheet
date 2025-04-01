@@ -1,6 +1,17 @@
+import 'dart:io';
+
 void main() {
-  List<String> names = ['Sándor', 'Johnson', 'Carl', 'Vladimir'];
-  print(names.length); // prints 4
-  names.remove("Carl");
-  print(names.length); // prints 3
+  print(5 % 2);
+}
+
+int getIntegerInput() {
+  int? value;
+  while (true) {
+    value = int.tryParse(stdin.readLineSync()!);
+    if (value == null) {
+      print("Enter a valid integer!");
+    } else {
+      return value;
+    }
+  }
 }

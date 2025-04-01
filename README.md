@@ -38,6 +38,37 @@ String is used to store a chain of characters. Unlike the rest 3, it has to star
 String text = "Hello, world";
 String text2 = 'You can use single quotes too!';
 ```
+<h2>Operators</h2>
+
+<ul>
+    <li>
+        <b>+</b>: add
+    </li>
+    <li>
+        <b>-</b>: subtract
+    </li>
+    <li>
+        <b>*</b>: multiply
+    </li>
+    <li>
+        <b>/</b>: divide
+    </li>
+    <li>
+        <b>%</b>: get remainder from division (5%2 = 1)
+    </li>
+    <li>
+        <b>++</b>: equals to +1 (i++ -> i = i+1)
+    </li>
+    <li>
+        <b>--</b>: equals to -1 (i-- -> i = i-1)
+    </li>
+    <li>
+        <b>&&</b>: and (logical operator, used for conditions)
+    </li>
+    <li>
+        <b>||</b>: or (logical operator, used for conditions)
+    </li>
+</ul>
 
 <h2>Language convention & requirements </h2>
 
@@ -77,6 +108,53 @@ int single = 0;
 int multipleWordVariable = 4;
 String youNeedToStartEachWordWithACapitalLetter = "";
 ```
+
+<h2>Getting user input</h2>
+
+To get user input from the console, you need to import the io library
+
+```dart
+import 'dart:io';
+```
+
+Basic String input:
+```dart
+String? input = stdin.readLineSync();
+```
+
+The reason for putting <code>?</code>, is because the user might not enter anything. In that case, the value of <code>input</code> will be <code>null</code>. The <code>?</code> means that the variable <code>input</code> might be a String, but it can also be null.</br>
+
+<h3>Converting user input</h3>
+You might want to convert user input(String) to another type, for example integer.</br>
+
+```dart
+String? input = stdin.readLineSync();
+int? numberInput = int.tryParse(input!);
+print(numberInput);
+```
+
+The <code>tryParse</code> method will try to convert the <code>input</code> into an int, if it fails it will return null, that's why we declare <code>int?</code>.</br>
+Advantage of <code>tryParse</code> over regular <code>parse</code>, that in case the conversion fails (for example users enters words, not number) the program will not crash, but it will return null instead. </br>
+
+The <code>!</code> is used to assure the compiler, that the value of <code>input</code> is not null, because the <code>tryParse</code> method expects a <code>String</code>, not <code>String?</code>(which might be null, but a regular String cannot be null)</br>
+
+<h4>Asking user to input until it succeeds</h4>
+You might want to continously ask user to enter a number, until the user enters a number (and not anything else.)</br>
+
+```dart
+int getIntegerInput() { // return type is integer
+  int? value; // declare an int that might be null
+  while (true) { // loop that goes forever
+    value = int.tryParse(stdin.readLineSync()!); // read input, then try to convert it to int
+    if (value == null) { // check if value is null
+      print("Enter a valid integer!"); // after printing, the program will go back to the beginning of while loop
+    } else { // if value is not null, the conversion succeeded
+      return value; // return the value, which exits the loop
+    }
+  }
+}
+```
+
 
 <h2>Functions</h2>
 Functions work similarly as in Python, but uses a different syntax.<br/>
