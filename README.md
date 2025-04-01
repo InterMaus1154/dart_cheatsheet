@@ -19,9 +19,9 @@ double d = -5.745;
 double e = 4; // can store whole numbers as well
 ```
 
-<h3>boolean</h3>
+<h3>bool</h3>
 
-Can only hold either `true` or `false`. Unlike in Python, in Dart you <b>CANNOT</b> store `0` or `1` into a boolean.
+Can only hold either `true` or `false`. Unlike in Python, in Dart you <b>CANNOT</b> store `0` or `1` into a bool.
 
 Syntax:
 ```dart
