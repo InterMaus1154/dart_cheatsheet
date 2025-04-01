@@ -1,7 +1,11 @@
 import 'dart:io';
 
 void main() {
-  print(5 % 2);
+  String? input;
+  while (input != "exit") {
+    print("Enter something. Type exit to end.");
+    input = stdin.readLineSync();
+  }
 }
 
 int getIntegerInput() {

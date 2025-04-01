@@ -350,4 +350,20 @@ for(int i = 10; i >= 1; i--){
 }
 ```
 
+<h3>for-in loops</h3>
+...
 
+<h3>while loops</h3>
+<code>while</code> loops can be used to run until a certain condition is true.</br>
+It is useful when the number of iterations are not known (like in <code>for</code> loops).
+
+The above example will ask for user input until the user types <code>exit</code>. A <code>while</code> loop is appropriate, because we do not know when the user will type exit.
+
+```dart
+String? input;
+while(input != "exit"){
+    print("Enter something. Type exit to end.");
+    input = stdin.readLineSync();
+}
+```
+<img src="while_example.png" width="400"/>
