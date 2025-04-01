@@ -350,8 +350,29 @@ for(int i = 10; i >= 1; i--){
 }
 ```
 
+<h4>Looping through lists</h3>
+We can use for loops to iterate over a list. The loop goes until it reaches the length of the list, then it exits the loop.</br>
+
+```dart
+List<String> names = ['Sándor', 'János', 'Mátyás', 'John'];
+for(int i = 0; i<names.length;i++){
+    print(names[i]);
+}
+
+```
+
 <h3>for-in loops</h3>
-...
+For-in loops are similar to Python's for loops. </br>
+It can iterate over a collection of elements without needing an index.</br>
+The first variable <b>need</b> to match the type of the elements in the list.</br>
+The variable <code>name</code> stores the current value from <code>names</code> in each iteration.</br>
+
+```dart
+List<String> names = ['Sándor', 'Johnson', 'Carl', 'Vladimir'];
+for(String name in names){
+    print(name);
+}
+```
 
 <h3>while loops</h3>
 <code>while</code> loops can be used to run until a certain condition is true.</br>
