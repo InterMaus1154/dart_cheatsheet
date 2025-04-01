@@ -57,10 +57,10 @@ String text2 = 'You can use single quotes too!';
         <b>%</b>: get remainder from division (5%2 = 1)
     </li>
     <li>
-        <b>++</b>: equals to +1 (i++ -> i = i+1)
+        <b>++</b>: equivalent to +1 (i++ -> i = i+1)
     </li>
     <li>
-        <b>--</b>: equals to -1 (i-- -> i = i-1)
+        <b>--</b>: equivalent to -1 (i-- -> i = i-1)
     </li>
     <li>
         <b>&&</b>: and (logical operator, used for conditions)
