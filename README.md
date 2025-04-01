@@ -253,9 +253,9 @@ i < 10; // this is the condition. This loop will run while i is less than 10
 i++ // this means to increment i by 1 after each iteration. This is a shorthand for i = i + 1
 ```
 <b>Note:</b>within the for loop <code>for()</code>, each statement is separated by a semicolon <code>;</code>. </br>
-<b>Note 2:</b> the variable name <code>i</code> is just a convention for programmers that is often used as a for loop variable, you can name it for example index if you want, or elephant (don't).
-<b>Note 3:</b> the third statement can be anything you want, for example multiply i by 2 <code>i = i * 2</code>
-<b>Note 4:</b> the condition can be <i>almost</i> anything you want. Examples:
+<b>Note 2:</b> the variable name <code>i</code> is just a convention for programmers that is often used as a for loop variable, you can name it for example index if you want, or elephant (don't). </br>
+<b>Note 3:</b> the third statement can be anything you want, for example multiply i by 2 <code>i = i * 2</code> </br>
+<b>Note 4:</b> the condition can be <i>almost</i> anything you want. Examples: </br>
 
 ```dart
 i < 10
