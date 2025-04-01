@@ -33,7 +33,8 @@ bool thisWontWork = 1; // A value of type 'int' can't be assigned to a variable 
 
 <h3>String</h3>
 
-String is used to store a chain of characters. Unlike the rest 3, it has to start with an uppercase `S`. The text to be stored goes within `""` or `''`. 
+String is used to store a chain of characters. Unlike the rest 3, it has to start with an uppercase `S`. (String is a class, while the others are primitive types)</br>
+The text to be stored goes within `""` or `''`. 
 ```dart
 String text = "Hello, world";
 String text2 = 'You can use single quotes too!';
